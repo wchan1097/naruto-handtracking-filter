@@ -4,4 +4,3 @@
   status = 301
   force = true # COMMENT: ensure that we always redirect
   headers = {X-From = "Netlify"}
-  signed = "API_SIGNATURE_TOKEN"
