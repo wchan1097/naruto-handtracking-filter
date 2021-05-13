@@ -1,5 +1,12 @@
 [[redirects]]
-  from = "/*"
+  from = "/"
+  to = "/home"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/LinkedIn"
   to = "www.linkedin.com/in/wchan1097"
   status = 200
   force = true
