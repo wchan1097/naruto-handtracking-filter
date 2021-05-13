@@ -1,0 +1,94 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test Your Jutsu. Its Your Ninja Way.</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="sketch.js"></script>
+  <script defer src=https://cdn.JsDelivr.net/npm/p5/lib/addons/p5.sound.min.js></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet"> 
+  <style>
+    *{
+      font-family: 'Bangers', cursive; 
+    }
+    body, html{
+      padding: 0;
+      margin: 0;
+    }
+    body{
+      background-image: url("naurto.jpg");
+      background-position: center top;
+      min-width: 1000px;
+      display: grid;
+      place-items: center center;
+      height: 100vh;
+      min-height: 900px;
+    }
+    canvas{
+      transform: scaleX(-1);
+      border-radius: 10px;
+      margin: 40px;
+    }
+    h2{
+      text-align: center;
+      color: white;
+      margin-bottom: 10px;
+      margin-top: 0;
+      letter-spacing: 2px;
+      font-size: 50px;
+    }
+    p, p > a{
+      margin-top: 40px;
+      text-align: center;
+      color: white;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p > a {
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button{
+      font-size: 30px;
+      border: none;
+      padding: 10px 20px;
+      width: 190px;
+      border-radius: 5px;
+      transition: .2s;
+      background-image: linear-gradient(to right, rgb(255, 189, 0, 0) , rgb(255, 55, 0, 0));
+    }
+    button:hover{
+      color: white;
+      background-image: linear-gradient(to right, rgb(255, 189, 0, 1) , rgb(255, 55, 0, 1));
+    }
+  </style>
+  <script>
+    document.getElementById("bg-music").volume = .5;
+  </script>
+</head>
+
+<body>
+  <div>
+    <a href="https://fontmeme.com/naruto-font/">
+      <img src="https://fontmeme.com/permalink/210513/a8b5b9303725372304bd0e932e5bee03.png" alt="naruto-font" border="0">
+    </a>
+    <div id="webContainer"></div>
+    <div>
+      <h2>PICK YOUR JUTSU</h2>
+      <div style="display: flex; gap: 15px; justify-content: center;">
+        <button type="button" id="rasengan" onclick="setJutsu(this)">Rasengan</button>
+        <button type="button" id="chidori" onclick="setJutsu(this)">Chidori</button>
+      </div>
+    </div>
+    <p>Developed by <a href="www.linkedin.com/in/wchan1097">William Chan.</a></p>
+  </div>
+  <audio id="bg-music" src="./Go!!!.mp3" autoplay=true loop=true></audio>
+</body>
+
+</html>
