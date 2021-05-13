@@ -1,0 +1,7 @@
+[[redirects]]
+  from = "/LinkedIn"
+  to = "https://github.com/wchan1097/naruto-jutsu-filter/tree/main"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
+  signed = "API_SIGNATURE_TOKEN"
