@@ -56,7 +56,8 @@ let sketch =  new p5(p => {
       var imgY = ((middleY + y) / 2);
       var imgDimensions;
       if (pickedJutsu == "Chidori"){
-        imgDimensions = 400;
+        imgDimensions = 600;
+        p.tint(255, 200);
         p.image(chidoriImg, imgX - (imgDimensions / 2), imgY - (imgDimensions / 2), imgDimensions, imgDimensions);
       }
       else{
