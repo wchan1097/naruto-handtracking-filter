@@ -61,7 +61,7 @@ let sketch =  new p5(p => {
         p.image(chidoriImg, imgX - (imgDimensions / 2), imgY - (imgDimensions / 2), imgDimensions, imgDimensions);
       }
       else{
-        imgDimensions = 200;
+        imgDimensions = 180;
         p.image(rasenganImg, imgX - (imgDimensions / 2), imgY - (imgDimensions / 2), imgDimensions, imgDimensions);
       }
       // fingers.forEach(element => {
