@@ -56,12 +56,12 @@ let sketch =  new p5(p => {
       var imgY = ((middleY + y) / 2);
       var imgDimensions;
       if (pickedJutsu == "Chidori"){
-        imgDimensions = 600;
+        imgDimensions = 700;
         p.tint(255, 200);
         p.image(chidoriImg, imgX - (imgDimensions / 2), imgY - (imgDimensions / 2), imgDimensions, imgDimensions);
       }
       else{
-        imgDimensions = 180;
+        imgDimensions = 150;
         p.image(rasenganImg, imgX - (imgDimensions / 2), imgY - (imgDimensions / 2), imgDimensions, imgDimensions);
       }
       // fingers.forEach(element => {
